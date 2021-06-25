@@ -1,0 +1,70 @@
+#home_container{
+    display: block;
+    float: left;
+    width: 80%;
+    height: 800px;
+    background-color:#F5F5F5;
+    
+}
+.title{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.title h1{
+    color: #000;
+    font-size: 30pt;
+    font-weight: 300;
+   
+}
+
+
+.card-body h5, p{
+    color: #ffff;
+}
+.card-body h5{
+    font-size: 30pt;
+    font-weight: 300;
+}
+.card-body p{
+    font-size: 15pt;
+    font-weight: 200;
+}
+.fa.fa-bell{
+    font-size: 2em;
+    margin-left: 20px;
+    margin-top: 8px;
+    color: #fff;
+
+}
+
+.card_chart{
+    display: block;
+    background-color: #fff;
+    margin-left: 45px;
+    width: 900px;
+    height: 450px;
+    float: left;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none;
+}
+
+.input-group{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.btn{
+    border-radius: 5px;
+    border-color: #ccc;
+}
+/* #filtrar{
+    color: black;
+    font-size: 15pt;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+} */
