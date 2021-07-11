@@ -10,6 +10,7 @@ import { OcorrenciaComponent } from './ocorrencia/ocorrencia.component';
 import { InqueritoComponent } from './inquerito/inquerito.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
+import { InformacaoComponent } from './informacao/informacao.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     OcorrenciaComponent,
     InqueritoComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    InformacaoComponent
   ],
   imports: [
     BrowserModule,

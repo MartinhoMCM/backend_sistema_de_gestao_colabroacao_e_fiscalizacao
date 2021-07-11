@@ -324,9 +324,7 @@
     transform: translateY(4px);
   }
   
-  nav.navbar a.menu-btn:hover {
-    background: #33b35a;
-  }
+
   
   /*  NAVBAR MEDIAQUERIES ---------------------------------- */
   @media (max-width: 575px) {
@@ -400,71 +398,7 @@
   .side-navbar a.brand-small strong {
     font-size: 1.5rem;
   }
-  
-  .side-navbar li {
-    position: relative;
-  }
-  
-  .side-navbar li a {
-    position: relative;
-    font-size: .9rem;
-    font-weight: 300;
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
-    padding: 12px;
-  }
-  
-  .side-navbar li a:focus, .side-navbar li a:hover, .side-navbar li a[aria-expanded="true"] {
-    background: #33b35a;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .side-navbar li a[data-toggle="collapse"]::before {
-    content: '\f104';
-    display: inline-block;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: 'FontAwesome';
-    position: absolute;
-    top: 50%;
-    right: 20px;
-  }
-  
-  .side-navbar li a[aria-expanded="true"]::before {
-    content: '\f107';
-    color: #fff;
-  }
-  
-  .side-navbar li.active > a {
-    background: #33b35a;
-  }
-  
-  .side-navbar li li.active > a {
-    background: #2d9f50 !important;
-  }
-  
-  .side-navbar li ul {
-    background: #292929;
-    position: relative;
-    min-width: 100%;
-    left: 0;
-    padding-left: 0;
-  }
-  
-  .side-navbar li ul a {
-    padding-left: 20px;
-    font-size: .85rem;
-  }
-  
-  .side-navbar li ul.collapse a {
-    border-left: 2px solid #33b35a;
-  }
-  
-  .side-navbar li ul.collapse a:hover {
-    background: #121212;
-  }
+
   
   .side-navbar .sidenav-header {
     background: #292929;
@@ -473,8 +407,9 @@
   }
   
   .side-navbar .sidenav-header img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
   }
   
   .side-navbar .sidenav-header span {
@@ -490,88 +425,19 @@
   
   .side-navbar .sidenav-heading {
     font-weight: 600;
-    color: #adb5bd;
-    font-size: .8rem;
+    color: #fff;
+    font-size: .7rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .side-navbar .sidenav-heading :hover{
+    color: #000;
   
-  .side-navbar i[class*='icon-'] {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
   }
-  
-  .side-navbar span {
-    display: inline-block;
-  }
-  
-  .side-navbar i {
-    font-size: inherit;
-    margin-right: 10px;
-  }
-  
-  .side-navbar .badge {
-    display: inline-block;
-    font-size: 0.6em;
-    vertical-align: middle;
-  }
-  
-  .side-navbar .brand-small {
-    display: none;
-  }
-  
-  .side-navbar.shrink {
-    width: 70px;
-    text-align: center;
-  }
-  
-  .side-navbar.shrink .brand-small {
-    display: block;
-  }
-  
-  .side-navbar.shrink .sidenav-header-inner {
-    display: none;
-  }
-  
-  .side-navbar.shrink .sidenav-heading {
-    margin-left: 0;
-    font-size: .8rem;
-  }
-  
-  .side-navbar.shrink ul li a {
-    font-size: .7rem;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
-  .side-navbar.shrink ul li a[data-toggle="collapse"]::before {
-    content: '\f107';
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-    position: absolute;
-    top: auto;
-    right: 50%;
-    bottom: 0;
-    left: auto;
-  }
-  
-  .side-navbar.shrink ul li a[data-toggle="collapse"][aria-expanded="true"]::before {
-    content: '\f106';
-  }
-  
-  .side-navbar.shrink ul li ul a {
-    padding-left: 10px;
-    font-size: .7rem;
-  }
-  
-  .side-navbar.shrink i {
-    display: block;
-    margin-right: 0;
-    font-size: 1rem;
-  }
+
   
   .side-navbar.shrink .arrow {
     float: none;
@@ -720,210 +586,7 @@
       font-size: 3em;
     }
   }
-  
-  /*
-  * ==========================================================
-  *     DASHBOARD HEADER
-  * ==========================================================
-  */
-  .dashboard-header {
-    background: #fff;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .dashboard-header .check-lists {
-    margin-top: 20px;
-  }
-  
-  .dashboard-header .check-lists label {
-    font-size: 0.75em;
-  }
-  
-  .dashboard-header .pie-chart {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  
-  .dashboard-header p {
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: #888;
-  }
-  
-  .dashboard-header li {
-    margin-bottom: 10px;
-  }
-  
-  /* DASHBOARD HEADER MEDIAQUERIES ------------------------- */
-  @media (max-width: 991px) {
-    .dashboard-header {
-      background: none;
-      border: none;
-      padding: 0;
-    }
-    .dashboard-header div[class*='col-'] {
-      margin-bottom: 30px;
-    }
-    .dashboard-header div[class*='col-']:last-of-type {
-      margin-bottom: 0;
-    }
-    .dashboard-header .card {
-      background: #fff;
-      padding: 30px;
-      -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-      height: 100%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .dashboard-header p {
-      font-size: 0.9em;
-    }
-    .dashboard-header h2 {
-      font-size: 1.3rem;
-    }
-    .dashboard-header .check-lists label {
-      font-size: 0.85em;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .dashboard-header {
-      margin-bottom: 30px;
-    }
-    .dashboard-header .card {
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      margin-bottom: 0;
-    }
-  }
-  
-  /*
-  * ==========================================================
-  *      STATISTICS
-  * ==========================================================
-  */
-  .statistics {
-    /* User Activity ------------- */
-  }
-  
-  .statistics div[class*='col-'] .card {
-    padding: 20px;
-    margin-bottom: 0;
-    height: 100%;
-  }
-  
-  .statistics h2 {
-    margin-bottom: 20px;
-  }
-  
-  .statistics p {
-    font-size: 0.8em;
-    color: #999;
-    margin-bottom: 5px;
-  }
-  
-  .statistics .income .icon {
-    font-size: 3.5em;
-  }
-  
-  .statistics .income .number {
-    font-size: 2.5em;
-    color: #555;
-  }
-  
-  .statistics .income strong {
-    font-size: 1.5em;
-  }
-  
-  .statistics .data-usage canvas {
-    width: 100%;
-    max-width: 200px;
-    border: none;
-  }
-  
-  .statistics .data-usage strong {
-    font-size: 1.5em;
-    display: block;
-  }
-  
-  .statistics .data-usage small {
-    font-size: 0.85em;
-    font-weight: 300;
-    color: #aaa;
-  }
-  
-  .statistics .data-usage span {
-    font-size: 0.95em;
-    color: #aaa;
-    display: block;
-  }
-  
-  .statistics .data-usage p {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  
-  .statistics .user-activity .number {
-    font-size: 2.5em;
-    font-weight: 300;
-    color: #555;
-  }
-  
-  .statistics .user-activity .progress {
-    border-radius: 0;
-    background: #f5f5f5;
-  }
-  
-  .statistics .user-activity .progress .progress-bar.bg-primary {
-    background: #33b35a !important;
-  }
-  
-  .statistics .user-activity .page-statistics {
-    margin-top: 20px;
-  }
-  
-  .statistics .user-activity .page-statistics strong {
-    display: block;
-    text-transform: uppercase;
-    color: #33b35a;
-    font-size: 2em;
-  }
-  
-  /* STATISTICS  MEDIAQUERIES ------------------------- */
-  @media (max-width: 991px) {
-    .statistics div[class*='col-'] .card {
-      height: auto;
-      margin-bottom: 30px;
-    }
-    .statistics div[class*='col-']:last-of-type .card {
-      margin-bottom: 0;
-    }
-    .statistics .data-usage {
-      text-align: center;
-    }
-    .statistics .data-usage div[class*='col-']:first-of-type {
-      padding-bottom: 20px;
-    }
-    .statistics .data-usage .gmpc {
-      padding-bottom: 20px !important;
-    }
-    p {
-      font-size: 0.75em;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .statistics h2 {
-      font-size: 1.3rem;
-    }
-  }
-  
+ 
   /*
   * ==========================================================
   *      UPDATES WIDGETS
@@ -1005,123 +668,6 @@
   
   /*
   * ==========================================================
-  *      DAILY FEEDS AND ACTIVITES WIDGETS
-  * ==========================================================
-  */
-  /*  Daily Feeds ------------------- */
-  .daily-feeds a.feed-profile {
-    margin-right: 10px;
-    width: 45px;
-    height: 45px;
-  }
-  
-  .daily-feeds a.feed-profile img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .daily-feeds .badge {
-    margin-right: 10px;
-  }
-  
-  .daily-feeds strong {
-    display: inline-block;
-    margin-right: 5px;
-  }
-  
-  .daily-feeds small {
-    color: #999;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .daily-feeds .message-card {
-    padding: 10px;
-    background: #fafafa;
-    margin-left: 55px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .daily-feeds .full-date {
-    line-height: 0.7em;
-    margin-bottom: 10px;
-  }
-  
-  .daily-feeds .CTAs a {
-    margin-right: 5px;
-  }
-  
-  .daily-feeds .CTAs a i {
-    margin-right: 5px;
-  }
-  
-  .daily-feeds .CTAs a:last-of-type {
-    margin-right: 0;
-  }
-  
-  .daily-feeds a.btn {
-    color: #fff;
-  }
-  
-  /* Activities  ------------------- */
-  .activities li {
-    padding: 0;
-  }
-  
-  .activities .date-holder {
-    padding-right: 0;
-  }
-  
-  .activities .date-holder .date {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  
-  .activities .date-holder .date span {
-    font-size: 0.8em;
-  }
-  
-  .activities .date-holder .icon {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    background: #f5f5f5;
-    text-align: center;
-    margin: 0;
-    display: inline-block;
-  }
-  
-  .activities .date-holder span {
-    display: block;
-    margin: 10px;
-  }
-  
-  .activities .content {
-    border-left: 1px solid #eee;
-    border-bottom: 20px;
-    padding: 10px 20px;
-  }
-  
-  .activities .content strong {
-    display: block;
-    margin-right: 5px;
-  }
-  
-  /* UPDATES WIDGET MEDIAQUERIES ------------------------- */
-  @media (min-width: 768px) {
-    .updates strong {
-      font-size: 1em;
-    }
-    .updates small {
-      font-size: 0.8em;
-    }
-  }
-  
-  /*
-  * ==========================================================
   *      PROGRESS CIRCLE
   * ==========================================================
   */
@@ -1141,39 +687,7 @@
       border-bottom: 1px solid #eee;
     }
   }
-  
-  /*
-  * ==========================================================
-  *       MAIN FOOTER
-  * ==========================================================
-  */
-  footer.main-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background: #222;
-    padding: 10px 0;
-  }
-  
-  footer.main-footer p {
-    font-size: 0.7em;
-    color: #777;
-    margin: 0;
-  }
-  
-  /* MAIN FOOTER MEDIAQUERIES ------------------------- */
-  @media (max-width: 575px) {
-    footer.main-footer div[class*="col-"] {
-      text-align: center !important;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    footer.main-footer p {
-      font-size: 0.9em;
-    }
-  }
-  
+ 
   /*
   * ==========================================================
   *       UTILITIES
@@ -1182,47 +696,6 @@
   .bg-cover {
     background-size: cover;
   }
-  
-  /*
-  * ==========================================================
-  *     POLAR CHART
-  * ==========================================================
-  */
-  .polar-chart-example .chart-container {
-    width: 500px;
-    max-width: 100%;
-    margin: 20px auto;
-  }
-  
-  /*
-  * ==========================================================
-  *     PIE CHART
-  * ==========================================================
-  */
-  .pie-chart-example .chart-container {
-    width: 500px;
-    max-width: 100%;
-    margin: 20px auto;
-  }
-  
-  /*
-  * ==========================================================
-  *     RADAR CHART
-  * ==========================================================
-  */
-  .radar-chart-example .chart-container {
-    width: 500px;
-    max-width: 100%;
-    margin: 20px auto;
-  }
-  
-  /* CHARTS MEDIAQUERIES -------------------------- */
-  @media (min-width: 768px) {
-    section.charts h2 {
-      font-size: 1rem;
-    }
-  }
-  
   /*
   * ==========================================================
   *     FORMS ELEMENTS
@@ -1230,97 +703,6 @@
   */
   label {
     font-size: .9rem;
-  }
-  
-  .form-control {
-    height: calc(2.4rem + 2px);
-    padding: 0.45rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    border-radius: 0;
-  }
-  
-  .form-control::-moz-placeholder {
-    font-size: 0.75em;
-    font-weight: 400;
-    color: #aaa;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .form-control::-webkit-input-placeholder {
-    font-size: 0.75em;
-    font-weight: 400;
-    color: #aaa;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .form-control:-ms-input-placeholder {
-    font-size: 0.75em;
-    font-weight: 400;
-    color: #aaa;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .form-control-sm {
-    height: calc(1.8125rem + 2px);
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
-  }
-  
-  .form-control-lg {
-    height: calc(2.875rem + 2px);
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-  
-  textarea.form-control {
-    height: auto;
-  }
-  
-  select.form-control {
-    font-weight: 300;
-  }
-  
-  select.form-control[size], select.form-control[multiple] {
-    height: auto;
-  }
-  
-  select.form-control option {
-    color: #999;
-    font-weight: 300;
-  }
-  
-  .custom-select {
-    height: calc(2.4rem + 2px);
-    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
-    line-height: 1.5;
-    color: #495057;
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
-    background-size: 8px 10px;
-    border: 1px solid #ced4da;
-    border-radius: 0;
-  }
-  
-  .custom-select:focus {
-    border-color: #88dda2;
-    outline: 0;
-  }
-  
-  .custom-select-sm {
-    height: calc(1.8125rem + 2px);
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    font-size: 75%;
-  }
-  
-  .custom-select-lg {
-    height: calc(2.875rem + 2px);
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    font-size: 125%;
   }
   
   .form-group {
@@ -1690,28 +1072,7 @@
   =====================
   
   */
-  #style-switch-button {
-    position: fixed;
-    top: 120px;
-    right: 0px;
-    border-radius: 0;
-    z-index: 2;
-  }
-  
-  #style-switch {
-    width: 300px;
-    padding: 20px;
-    position: fixed;
-    top: 160px;
-    right: 0px;
-    background: #fff;
-    border: solid 1px #ced4da;
-    z-index: 2000;
-  }
-  
-  #style-switch h4 {
-    color: #495057;
-  }
+
   
   /* ========================================= 
      THEMING OF BOOTSTRAP COMPONENTS           
@@ -3076,3 +2437,13 @@
     }
   }
   
+
+  .sidenav-heading a{
+    color: #fff;
+  }
+  .sidenav-heading a:active{
+    color: #000;
+  }
+  #activo{
+    color: #000;
+  }
