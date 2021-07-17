@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeContentComponent } from './home-content/home-content.component';
-import { InformacaoComponent } from './informacao/informacao.component';
-import { InqueritoComponent } from './inquerito/inquerito.component';
-import { LoginComponent } from './login/login.component';
-import { OcorrenciaComponent } from './ocorrencia/ocorrencia.component';
+import { HomeContentComponent } from './view/home-content/home-content.component';
+import { InformacaoComponent } from './view/informacao/informacao.component';
+import { InqueritoComponent } from './view/inquerito/inquerito.component';
+import { OcorrenciaComponent } from './view/ocorrencia/ocorrencia.component';
 
 const routes: Routes = [
   {
@@ -17,9 +16,7 @@ const routes: Routes = [
   {
     path:'inquerito', component:InqueritoComponent
   },
-  {
-    path:'login', component:LoginComponent
-  },
+
   {
     path:'info', component:InformacaoComponent
   },

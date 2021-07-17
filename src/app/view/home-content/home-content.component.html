@@ -48,77 +48,19 @@
             <div id="updates-box" role="tabpanel" class="collapse show">
               <ul class="news list-unstyled">
                 <!-- Item-->
-                <li class="d-flex justify-content-between"> 
+                <li *ngFor="let ocorrencia of lista_ocorrencia" class="d-flex justify-content-between"> 
                   <div class="left-col d-flex">
                     <div class="icon"><i class="icon-rss-feed"></i></div>
-                    <div class="title"><strong>Lixo acumuluda no quarteirão A</strong>
-                      <p>A empresa de lixo precisa vir tirar este lixo, está nos dificultar muito</p>
+                    <div class="title"><strong>{{ocorrencia.nome_ocorrencia}}</strong>
+                      <p>{{ocorrencia.descricao}}</p>
                     </div>
                   </div>
                   <div class="right-col text-right">
                     <div class="update-date">24<span class="month">Jan</span></div>
                   </div>
                 </li>
-                <!-- Item-->
-                <li class="d-flex justify-content-between"> 
-                  <div class="left-col d-flex">
-                    <div class="icon"><i class="icon-rss-feed"></i></div>
-                    <div class="title"><strong>Falta de água.</strong>
-                      <p>Triste saber que numa centralidade passamos por dificuldades como estas, as torneiras não saem água há uma semana, onde está a EPAL?</p>
-                    </div>
-                  </div>
-                  <div class="right-col text-right">
-                    <div class="update-date">24<span class="month">Jan</span></div>
-                  </div>
-                </li>
-                <!-- Item-->
-                <li class="d-flex justify-content-between"> 
-                  <div class="left-col d-flex">
-                    <div class="icon"><i class="icon-rss-feed"></i></div>
-                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                  <div class="right-col text-right">
-                    <div class="update-date">24<span class="month">Jan</span></div>
-                  </div>
-                </li>
-                <!-- Item-->
-                <li class="d-flex justify-content-between"> 
-                  <div class="left-col d-flex">
-                    <div class="icon"><i class="icon-rss-feed"></i></div>
-                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                  <div class="right-col text-right">
-                    <div class="update-date">24<span class="month">Jan</span></div>
-                  </div>
-                </li>
-                <!-- Item-->
-                <li class="d-flex justify-content-between"> 
-                  <div class="left-col d-flex">
-                    <div class="icon"><i class="icon-rss-feed"></i></div>
-                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                  <div class="right-col text-right">
-                    <div class="update-date">24<span class="month">Jan</span></div>
-                  </div>
-                </li>
-                <!-- Item-->
-                <li class="d-flex justify-content-between"> 
-                  <div class="left-col d-flex">
-                    <div class="icon"><i class="icon-rss-feed"></i></div>
-                    <div class="title"><strong>Lorem ipsum dolor sit amet.</strong>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                  </div>
-                  <div class="right-col text-right">
-                    <div class="update-date">24<span class="month">Jan</span></div>
-                  </div>
-                </li>
+      
+              
               </ul>
             </div>
           </div>

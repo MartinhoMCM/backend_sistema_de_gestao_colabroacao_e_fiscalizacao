@@ -1,4 +1,4 @@
-<div class="container" id="home_container">
+<div class="container-fluid" id="home_container">
 
     <div class="title">
       <h1 class="text-primary" style="color: black;">
@@ -23,38 +23,24 @@
                   <tr>
                     <th scope="col">ID</th>
                     <th scope="col">ESTADO</th>
-                    <th scope="col">CATEGORIA</th>
+                    <th scope="col">NOME OCORRENCIA</th>
+                    <th scope="col">ID CATEGORIA</th>
                     <th scope="col">LOCAL</th>
                     <th scope="col">CRIAÇÃO</th>
-                    <th scope="col">APOIO</th>
+                    <th scope="col">ACÇÃO</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>20-05-21</td>
-                    <td>20-05-21</td>
+                  <tr *ngFor="let ocorrencia of lista_ocorrencia">
+                    <th scope="row">{{ocorrencia.id}}</th>
+                    <td>{{ocorrencia.estado}}</td>
+                    <td>{{ocorrencia.nome_ocorrencia}}</td>
+                    <td>{{ocorrencia.categoria_id}}</td>
+                    <td>{{ocorrencia.localizacao}}</td>
+                    <td>{{ocorrencia.created_at}}</td>
+                    <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
                   </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>20-05-21</td>
-                    <td>20-05-21</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>20-05-21</td>
-                    <td>20-05-21</td>
-                  </tr>
-                  
+               
                 </tbody>
               </table>
            </div>

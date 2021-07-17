@@ -1,0 +1,36 @@
+<div class="page login-page" >
+	
+      <div class="form-outer text-center d-flex align-items-center">
+        <div class="form-inner">
+          <!--   <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+          <div class="logo text-uppercase"><strong class="text-primary">Faca o login</strong></div>
+          <p>Acesso Restrito para administrador</p>
+          <form [formGroup]="dados_admin" class="text-left form-validate" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="">Email</label>
+              <input id="login-useremail" type="text" name="loginUseremail" required data-msg="Por favor insira o teu email" class="form-control" formControlName="email">
+            </div>
+         
+            <div *ngIf="f.email.errors && (f.email.dirty || f.email.touched)" class="alert alert-danger">
+              Este email nao existe
+            </div>
+            <div class="form-group">
+              <label for="">Senha</label>
+              <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="form-control" formControlName="senha" name="senha" #senha>
+            </div>
+            <div *ngIf="f.senha.errors && (f.senha.dirty || f.senha.touched)" class="alert alert-danger">
+              Senha tem que ter mais de 6 caracteres
+            </div>
+            <div  class="form-group text-center"><button id="login" class="btn btn-primary"  [disabled]="!dados_admin.valid" >Login</button>
+              <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button type="button" [disabled]="!dados_admin.valid" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+        </div>
+       
+    
+  
+    </div>

@@ -1,0 +1,78 @@
+<div class="container ">
+
+  <div  class="container-fluid">
+    <button *ngIf="!is_new_inquerito" class="btn btn-primary" (click)="novo_inquerito()">NOVO INQUÉRITO </button>
+    <button *ngIf="is_new_inquerito" class="btn btn-danger" (click)="novo_inquerito()">CANCELAR </button>
+  </div>
+    <!-- Statistics Section-->
+   <section  *ngIf="!is_new_inquerito"
+   class="statistics">
+    <div class="container-fluid">
+      <div class="row d-flex">
+        <div class="col-lg-4">
+          <!-- Income-->
+          <div class="card income text-center">
+            <div class="icon"><i class="icon-line-chart"></i></div>
+            <div class="number">40</div><strong class="text-primary">Ocorrencias Reportadas</strong>
+            <p>A ocorrência mais reportada é da categoria Lixo.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <!-- Income-->
+          <div class="card income text-center">
+            <div class="icon"><i class="icon-line-chart"></i></div>
+            <div class="number">20</div><strong class="text-primary">Munícipes</strong>
+            <p>Número total de munícipes cadastrado no sistema</p>
+          </div>
+        </div>
+      
+        <div class="col-lg-4">
+          <!-- Income-->
+          <div class="card income text-center">
+            <div class="icon"><i class="icon-line-chart"></i></div>
+            <div class="number">126,418</div><strong class="text-primary">Inqueritos enviados</strong>
+            <p>Números de Inquéritos enviado ao munícipes para serem respondidos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div *ngIf="is_new_inquerito" class="container-fluid">
+    <div><h1 class="title">Insira dados</h1></div>
+      <div class="row d-flex">
+        <div class="col-lg">
+          <!-- Income-->
+          <div class="card income text-center">
+              <form id="form">
+                  <div class="form-group">
+                    <label for="titulo">Título</label>
+                    <input type="email" class="form-control" id="titulo" aria-describedby="tituloHelp" placeholder="Título">
+                  
+                  </div>
+                  <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <input type="descricao" class="form-control" id="descricao" placeholder="Descrição">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Conteúdo</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+              
+                <div id="btns" class="row">
+                    <div >
+                      <button id="cancelar" type="submit" class="btn btn-primary">Cancelar</button>
+                    </div>
+                    <div >
+                      <button id="salvar" type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+                </form>
+          </div>
+        </div>
+  
+       
+      </div>
+    </div>
+</div>

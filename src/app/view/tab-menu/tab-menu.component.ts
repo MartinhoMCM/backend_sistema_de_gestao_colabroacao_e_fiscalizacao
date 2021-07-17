@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit, Input } from '@angular/core';
+import { Usuario } from 'src/app/model/usuario';
 
 @Component({
   selector: 'app-tab-menu',
@@ -8,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class TabMenuComponent implements OnInit {
 
   constructor() { }
-
+  usuario:Usuario;
+   
+  @Input() admin;
+  
   ngOnInit(): void {
   }
+
 
 }

@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class InqueritoComponent implements OnInit {
 
   items:number=2;
+  is_new_inquerito=false
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  novo_inquerito(){
+    this.is_new_inquerito=!this.is_new_inquerito;
+  }
 }

@@ -3,14 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TabMenuComponent } from './tab-menu/tab-menu.component';
-import { NavComponent } from './nav/nav.component';
-import { HomeContentComponent } from './home-content/home-content.component';
-import { OcorrenciaComponent } from './ocorrencia/ocorrencia.component';
-import { InqueritoComponent } from './inquerito/inquerito.component';
-import { LoginComponent } from './login/login.component';
-import { FooterComponent } from './footer/footer.component';
-import { InformacaoComponent } from './informacao/informacao.component';
+import { TabMenuComponent } from './view/tab-menu/tab-menu.component';
+import { NavComponent } from './view/nav/nav.component';
+import { HomeContentComponent } from './view/home-content/home-content.component';
+import { OcorrenciaComponent } from './view/ocorrencia/ocorrencia.component';
+import { InqueritoComponent } from './view/inquerito/inquerito.component';
+import { FooterComponent } from './view/footer/footer.component';
+import { InformacaoComponent } from './view/informacao/informacao.component';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './view/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,13 +24,17 @@ import { InformacaoComponent } from './informacao/informacao.component';
     HomeContentComponent,
     OcorrenciaComponent,
     InqueritoComponent,
-    LoginComponent,
     FooterComponent,
-    InformacaoComponent
+    InformacaoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule    ,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

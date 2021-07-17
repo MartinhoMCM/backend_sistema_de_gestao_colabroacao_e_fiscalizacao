@@ -1,0 +1,63 @@
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+  }
+  .title{
+      margin-bottom: 50px;
+  }
+.container-fluid{
+    margin-top: 60px;
+    
+}
+.card{
+    height: 500px;
+}
+
+#form{
+    clear: both;
+    margin:50px 20px 10px 20px;
+
+}
+.form-group label{
+    position: relative;
+    text-align: right;
+    display: block;
+    float: left;
+    color: #000;
+}
+
+#cancelar{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid  #0066B0;
+    width: 100px;
+    margin-right: 20px;
+}
+#salvar{
+
+    background-color:  #0066B0;
+    color: #fff;
+    width: 100px;
+    margin-right: 15px;
+    
+   
+}
+
+#btns{
+    position: relative;
+    float: right;   
+}
